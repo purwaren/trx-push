@@ -1,0 +1,12 @@
+api:
+  login_url: "http://10.19.11.52:8081/v1/dashboard/auth/login"
+  username: "mulyadi@modefashion.id"
+  password: "12345!"
+  push_url: "http://10.19.11.52:8081/v1/pos/push-transaction"
+database:
+  host: "10.19.11.52"
+  port: 15432
+  user: "postgres"
+  password: "postgres"
+  dbname: "mpos"
+  sslmode: "disable"
