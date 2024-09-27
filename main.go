@@ -96,7 +96,7 @@ func getTransactionsFromDB() ([]Transaction, error) {
 	}
 	defer db.Close()
 
-	rows, err := db.Query("SELECT number FROM invoice WHERE status = 1")
+	rows, err := db.Query("SELECT number FROM invoice WHERE status = 1 ORDER BY date ASC")
 	if err != nil {
 		return nil, err
 	}
